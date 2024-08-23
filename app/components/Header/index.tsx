@@ -46,7 +46,7 @@ const Header = () => {
             Home
           </a>
           <a
-            href="/details"
+            href="/DetailsPage"
             className="text-white hover:text-primary transition-colors duration-300"
           >
             Details
