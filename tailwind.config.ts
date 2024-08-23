@@ -17,7 +17,7 @@ const config: Config = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["halloween"],
+    themes: ["dracula"],
     darkTheme: "dark",
     base: true,
     styled: true,
