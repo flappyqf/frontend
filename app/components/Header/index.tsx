@@ -10,7 +10,7 @@ const Header = () => {
             FlappyQF
           </h1>
         </div>
-        <nav className="hidden md:flex space-x-4">
+        <nav className="hidden md:flex gap-4 mx-auto">
           <a
             href="/"
             className="text-white hover:text-primary transition-colors duration-300"

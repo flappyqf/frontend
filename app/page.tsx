@@ -3,6 +3,7 @@ import ProjectBanner from "./components/ProjectBanner";
 import ProjectCard from "./components/ProjectCard";
 import { useState, useEffect } from "react";
 import { getProjects } from "./components/data/projects";
+import { TournamentChart } from "./components/TournamentChart";
 
 export default function Home() {
   const projects = getProjects();
@@ -20,6 +21,9 @@ export default function Home() {
               description={project.description}
             />
           ))}
+        </div>
+        <div className="my-14 relative">
+          <TournamentChart />
         </div>
       </div>
     </main>
