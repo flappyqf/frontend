@@ -29,26 +29,6 @@ const Header = () => {
   createWallet("io.zerion.wallet"),
 ];
 
-  const client = createThirdwebClient({ clientId: process.env.NEXT_PUBLIC_CLIENT_ID || "" });
-  const chain = defineChain(534351);
-  const wallets = [
-  inAppWallet({
-    auth: {
-      options: [
-        "google",
-        "email",
-        "passkey",
-      ],
-    },
-  }),
-
-  createWallet("io.metamask"),
-  createWallet("com.coinbase.wallet"),
-  createWallet("me.rainbow"),
-  createWallet("io.rabby"),
-  createWallet("io.zerion.wallet"),
-];
-
   return (
  
       <header className="mx-auto py-8 lg:py-6 bg-neutral sticky top-0 z-50">
