@@ -40,5 +40,11 @@ export function getProjects() {
       description:
         "Stay trendy with the latest in designer clothing and accessories.",
     },
+    {
+      image: "apubcclogo.jpg",
+      title: "Fashion douchebag",
+      description:
+        "Stay trendy with the latest in designer clothing and accessories.",
+    },
   ];
 }
