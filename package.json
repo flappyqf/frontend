@@ -15,6 +15,8 @@
     "react-dom": "^18",
     "react-tournament-bracket": "^0.2.4",
     "react-query": "^3.39.3",
+    "thirdweb": "^5.48.1",
+    "react-query": "^3.39.3",
     "thirdweb": "^5.48.1"
   },
   "devDependencies": {
