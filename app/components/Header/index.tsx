@@ -10,6 +10,30 @@ const Header = () => {
             FlappyQF
           </h1>
         </div>
+        <nav className="hidden md:flex space-x-4">
+          <a
+            href="/"
+            className="text-white hover:text-primary transition-colors duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="/details"
+            className="text-white hover:text-primary transition-colors duration-300"
+          >
+            Details
+          </a>
+        </nav>
+        <footer className="md:hidden fixed bottom-0 left-0 right-0 bg-neutral py-4">
+          <div className="container mx-auto flex justify-center space-x-4">
+            <a href="/" className="btn btn-primary">
+              Home
+            </a>
+            <a href="/details" className="btn btn-primary">
+              Details
+            </a>
+          </div>
+        </footer>
         {/* Put connect button here */}
         <button className="border rounded-md py-2 px-4 hover:bg-black hover:text-white transition-all duration-300">
           Test
