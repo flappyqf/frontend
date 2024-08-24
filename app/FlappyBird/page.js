@@ -152,6 +152,7 @@ function App() {
 
 export default App;
 
+//Stylesheet for the game.
 const Home = styled.div`
   height: 100vh;
   width: 100vw;
