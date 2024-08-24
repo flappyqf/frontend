@@ -23,7 +23,6 @@ const Banner = () => {
         </div>
       </div>
 
-      {/* Right Side: Card Templates */}
       <div className="flex flex-col gap-4 my-2 mt-4 md:mt-0">
         <CardTemplate title="Total Funds Raised" description="420" />
 
