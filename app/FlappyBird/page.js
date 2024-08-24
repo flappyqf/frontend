@@ -8,7 +8,7 @@ const BIRD_WIDTH = 40;
 const WALL_HEIGHT = 533;
 const WALL_WIDTH = 800;
 const GRAVITY = 7;
-const OBJ_WIDTH = 120;
+const OBJ_WIDTH = 52;
 const OBJ_SPEED = 7;
 const OBJ_GAP = 160;
 
@@ -184,7 +184,7 @@ const Bird = styled.div`
 
 const Obj = styled.div`
   position: relative;
-  background-image: url("./image.png");
+  background-image: url("./pipe-green.png");
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   left: ${(props) => props.left}px;
