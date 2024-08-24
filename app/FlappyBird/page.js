@@ -8,9 +8,9 @@ const BIRD_HEIGHT = 35;
 const BIRD_WIDTH = 40;
 const WALL_HEIGHT = 533;
 const WALL_WIDTH = 800;
-const GRAVITY = 6;
+const GRAVITY = 4;
 const OBJ_WIDTH = 52;
-const OBJ_SPEED = 5;
+const OBJ_SPEED = 3;
 const OBJ_GAP = 120;
 
 /**
