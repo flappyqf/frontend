@@ -1,7 +1,7 @@
 import React from "react";
 import { SwapModel } from "../Model/SwapModel/page";
 import { ContributeModel } from "../Model/ContributeModel/page";
-import { PlayButton } from "../PlayButton/page";
+import { PlayButton } from "../Model/PlayButton/page";
 
 const Session = () => {
   return (

@@ -1,11 +1,10 @@
 import React from 'react'
 import Session from './components/Session/page'
-import ProjectBanner from '../components/ProjectBanner'
-
+import Banner from './components/Banner/page'
 const DetailsPage = () => {
   return (
     <div>
-      <ProjectBanner />
+      <Banner />
       <Session />
     </div>
   )
