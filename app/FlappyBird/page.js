@@ -5,12 +5,12 @@ import { useEffect, useState } from "react";
 
 const BIRD_HEIGHT = 35;
 const BIRD_WIDTH = 40;
-const WALL_HEIGHT = 800;
+const WALL_HEIGHT = 533;
 const WALL_WIDTH = 800;
-const GRAVITY = 8;
-const OBJ_WIDTH = 52;
-const OBJ_SPEED = 6;
-const OBJ_GAP = 200;
+const GRAVITY = 7;
+const OBJ_WIDTH = 120;
+const OBJ_SPEED = 7;
+const OBJ_GAP = 160;
 
 /**
  * This function is the main component which renders all the game objects.
@@ -110,32 +110,42 @@ function App() {
 
   return (
     //Whole body of the game.
-    <Home onClick={handler} onKeyDown={handleKeyDown} tabIndex="0">
-      <ScoreShow>Score: {score}</ScoreShow>
-      <Background height={WALL_HEIGHT} width={WALL_WIDTH}>
-        {!isStart ? <Startboard>Click To Start</Startboard> : null}
-        <Obj
-          height={objHeight}
-          width={OBJ_WIDTH}
-          left={objPos}
-          top={0}
-          deg={180}
-        />
-        <Bird
-          height={BIRD_HEIGHT}
-          width={BIRD_WIDTH}
-          top={birdpos}
-          left={100}
-        />
-        <Obj
-          height={WALL_HEIGHT - OBJ_GAP - objHeight}
-          width={OBJ_WIDTH}
-          left={objPos}
-          top={WALL_HEIGHT - (objHeight + (WALL_HEIGHT - OBJ_GAP - objHeight))}
-          deg={0}
-        />
-      </Background>
-    </Home>
+    <div className="h-screen flex flex-col items-center justify-center">
+      <Home
+        onClick={handler}
+        onKeyDown={handleKeyDown}
+        tabIndex="0"
+        className="h-full w-full max-h-[533px] max-w-[800px]"
+      >
+        <ScoreShow className="">Score: {score}</ScoreShow>
+
+        <Background height={WALL_HEIGHT} width={WALL_WIDTH}>
+          {!isStart ? <Startboard>Click To Start</Startboard> : null}
+          <Obj
+            height={objHeight}
+            width={OBJ_WIDTH}
+            left={objPos}
+            top={0}
+            deg={180}
+          />
+          <Bird
+            height={BIRD_HEIGHT}
+            width={BIRD_WIDTH}
+            top={birdpos}
+            left={100}
+          />
+          <Obj
+            height={WALL_HEIGHT - OBJ_GAP - objHeight}
+            width={OBJ_WIDTH}
+            left={objPos}
+            top={
+              WALL_HEIGHT - (objHeight + (WALL_HEIGHT - OBJ_GAP - objHeight))
+            }
+            deg={0}
+          />
+        </Background>
+      </Home>
+    </div>
   );
 }
 
@@ -152,14 +162,13 @@ const Home = styled.div`
 `;
 
 const Background = styled.div`
-  background-image: url("./background-day.png");
+  background-image: url("./newshibuya.jpg");
   background-repeat: no-repeat;
   background-size: ${(props) => props.width}px ${(props) => props.height}px;
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   position: relative;
   overflow: hidden;
-  border: 2px solid black;
 `;
 
 const Bird = styled.div`
@@ -175,7 +184,7 @@ const Bird = styled.div`
 
 const Obj = styled.div`
   position: relative;
-  background-image: url("./pipe-green.png");
+  background-image: url("./image.png");
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   left: ${(props) => props.left}px;
@@ -185,7 +194,7 @@ const Obj = styled.div`
 
 const Startboard = styled.div`
   position: relative;
-  top: 49%;
+  top: 50%;
   background-color: black;
   padding: 10px;
   width: 100px;
@@ -200,9 +209,7 @@ const Startboard = styled.div`
 
 const ScoreShow = styled.div`
   position: absolute;
-  top: 10%;
-  left: 47%;
-  z-index: 1;
   font-weight: bold;
   font-size: 30px;
+  top: 20%;
 `;
