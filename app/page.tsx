@@ -1,7 +1,5 @@
-"use client";
 import ProjectBanner from "./components/ProjectBanner";
 import ProjectCard from "./components/ProjectCard";
-import { useState, useEffect } from "react";
 import { getProjects } from "./components/data/projects";
 import { TournamentChart } from "./components/TournamentChart";
 
