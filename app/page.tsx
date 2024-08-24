@@ -21,7 +21,9 @@ export default function Home() {
           ))}
         </div>
         {/* fix tournament chart */}
-        <div className="my-14 relative">{/* <TournamentChart /> */}</div>
+        <div className="my-14 relative">
+          <TournamentChart />
+        </div>
       </div>
     </main>
   );

@@ -8,10 +8,10 @@ const BIRD_HEIGHT = 35;
 const BIRD_WIDTH = 40;
 const WALL_HEIGHT = 533;
 const WALL_WIDTH = 800;
-const GRAVITY = 7;
+const GRAVITY = 4;
 const OBJ_WIDTH = 52;
-const OBJ_SPEED = 7;
-const OBJ_GAP = 160;
+const OBJ_SPEED = 3;
+const OBJ_GAP = 120;
 
 /**
  * This function is the main component which renders all the game objects.
@@ -80,7 +80,7 @@ function App() {
     const handleKeyPress = (e) => {
       if (e.code === "Space") {
         setIsStart(true);
-        setBirdpos((prev) => prev - 30);
+        setBirdpos((prev) => prev - 60);
       }
     };
 
@@ -152,7 +152,7 @@ function App() {
 
 export default App;
 
-//All the stylesheets required for the game.
+//Stylesheet for the game.
 const Home = styled.div`
   height: 100vh;
   width: 100vw;
