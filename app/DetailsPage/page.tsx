@@ -1,13 +1,13 @@
-import React from 'react'
-import Session from './components/Session/page'
-import Banner from './components/Banner/page'
+import React from "react";
+import Session from "./components/Session/page";
+import Banner from "./components/Banner";
 const DetailsPage = () => {
   return (
     <div>
       <Banner />
       <Session />
     </div>
-  )
-}
+  );
+};
 
-export default DetailsPage
+export default DetailsPage;

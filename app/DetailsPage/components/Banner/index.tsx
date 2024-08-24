@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import CardTemplate from "../CardTemplate/page";
+import CardTemplate from "../CardTemplate";
 import { describe } from "node:test";
 
 const Banner = () => {
