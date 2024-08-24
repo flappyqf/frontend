@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
  
-      <header className="mx-auto py-8 lg:py-6 bg-neutral sticky top-0 z-50">
+      <header className="mx-auto py-8 lg:py-6 bg-black sticky top-0 z-50">
         <div className="container mx-auto px-8 lg:px-4 flex items-center justify-between">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold uppercase text-primary">
@@ -46,13 +46,13 @@ const Header = () => {
             Home
           </a>
           <a
-            href="/details"
+            href="/DetailsPage"
             className="text-white hover:text-primary transition-colors duration-300"
           >
             Details
           </a>
         </nav>
-        <footer className="md:hidden fixed bottom-0 left-0 right-0 bg-neutral py-4">
+        <footer className="md:hidden fixed bottom-0 left-0 right-0 bg-black py-4">
           <div className="container mx-auto flex justify-center space-x-4">
             <a href="/" className="btn btn-primary">
               Home
@@ -71,7 +71,7 @@ const Header = () => {
               connectModal={{ size: "wide" }}
               accountAbstraction={{
                 chain, 
-                factoryAddress: "0xCE7b85ADc9913A31eC7610A83e38b7D7eAA18747",
+                factoryAddress: "0xD613bAdEe95a5Af1d2Bb04bD594B92D3B89989d5",
                 sponsorGas: true,
               }}
             />
