@@ -55,7 +55,6 @@ const Header = () => {
             </a>
           </div>
         </footer>
-        {/* Put connect button here */}
         <div>
           <ConnectButton
             client={client}
