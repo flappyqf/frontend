@@ -1,21 +1,11 @@
 "use client";
 import React from "react";
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalTrigger,
-} from "../../ui/animated-modal";
-import { useRouter } from "next/navigation";
 
-
-export function BoosterModel() {
-    const router = useRouter();
-
+export function PlayButton() {
   return (
     <div className=" flex items-center justify-center">
-      <Modal>
+      {/* Unused Modal */}
+      {/* <Modal>
         <ModalTrigger className="bg-neutral text-white shadow-2xl flex justify-center group/modal-btn w-96 h-20 rounded-lg items-center">
           <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
             Buy Boost Up Pass
@@ -37,7 +27,13 @@ export function BoosterModel() {
             </div>
           </ModalContent>
         </ModalBody>
-      </Modal>
+      </Modal> */}
+      <a
+        href="https://www.google.com"
+        className="bg-neutral text-white shadow-2xl flex justify-center group/modal-btn w-96 h-20 rounded-lg items-center hover:bg-neutral-700 transition duration-500 animate-pulse"
+      >
+        Play to boost your chances
+      </a>
     </div>
   );
 }
