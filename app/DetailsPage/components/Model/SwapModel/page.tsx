@@ -8,6 +8,7 @@ import {
   ModalTrigger,
 } from "../../ui/animated-modal";
 import { useRouter } from "next/navigation";
+import Swapper from "./ui/Swapper";
 
 
 export function SwapModel() {
@@ -26,13 +27,13 @@ export function SwapModel() {
         </ModalTrigger>
         <ModalBody>
           <ModalContent>
-            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
+            <h4 className="text-lg md:text-2xl text-neutral-600  font-bold text-center mb-8">
               Let's swap
             </h4>
         
             <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-              <div className="flex  items-center justify-center">
-                <div className="text-black">hey</div>
+              <div className="flex  items-center justify-center text-black">
+                <Swapper />
               </div>
             </div>
           </ModalContent>
