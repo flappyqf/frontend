@@ -1,3 +1,4 @@
+"use client";
 import { Bracket, IRoundProps } from "react-brackets";
 
 const rounds: IRoundProps[] = [
