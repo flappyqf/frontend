@@ -8,7 +8,7 @@ import {
   ModalTrigger,
 } from "../../ui/animated-modal";
 import { useRouter } from "next/navigation";
-import Swapper from "./ui/Swapper";import Swapper from "./ui/Swapper";
+import Swapper from "./ui/Swapper";
 
 
 export function SwapModel() {
@@ -32,8 +32,6 @@ export function SwapModel() {
             </h4>
 
             <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-              <div className="flex  items-center justify-center text-black">
-                <Swapper />
               <div className="flex  items-center justify-center text-black">
                 <Swapper />
               </div>

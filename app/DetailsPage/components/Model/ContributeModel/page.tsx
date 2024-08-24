@@ -16,13 +16,6 @@ export function ContributeModel() {
   const handleContributeAmountChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
     setContributeAmount(event.target.value);
   };
-  
-  const [contributeAmount, setContributeAmount] = React.useState('');
-
-  const handleContributeAmountChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
-    setContributeAmount(event.target.value);
-  };
-  
 
   return (
     <div className=" flex items-center justify-center">
