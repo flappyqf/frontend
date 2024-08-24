@@ -4,7 +4,7 @@ import { describe } from 'node:test';
 
 const Banner = () => {
   return (
-    <div className="bg-neutral shadow-xl w-full h-96 flex flex-col md:flex-row justify-evenly items-center">
+    <div className="bg-black shadow-xl w-full h-96 flex flex-col md:flex-row justify-evenly items-center">
       {/* Left Side: APUBCC Logo and Title */}
       <div className="flex flex-row items-center gap-4 md:gap-8 ">
         <img src="/apubcclogo.jpg" alt="APUBCC" className="rounded-full w-24 h-24 md:w-32 md:h-32 object-cover" />

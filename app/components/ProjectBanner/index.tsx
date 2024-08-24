@@ -3,7 +3,7 @@ import React from "react";
 
 const ProjectBanner = () => {
   return (
-    <div className="bg-neutral shadow-xl w-full h-96 flex flex-col justify-center items-center">
+    <div className="bg-black shadow-xl w-full h-96 flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center md:items-center my-4 gap-4 px-4 text-center md:text-left">
         <h1 className="card-title text-white uppercase text-7xl">
           FlappyQF round 1
