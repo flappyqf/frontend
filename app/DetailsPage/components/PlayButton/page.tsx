@@ -29,8 +29,8 @@ export function PlayButton() {
         </ModalBody>
       </Modal> */}
       <a
-        href="https://www.google.com"
-        className="bg-neutral text-white shadow-2xl flex justify-center group/modal-btn w-96 h-20 rounded-lg items-center hover:bg-neutral-700 transition duration-500 animate-pulse"
+        href="/FlappyBird"
+        className="bg-neutral text-white shadow-2xl flex justify-center group/modal-btn w-96 h-14 rounded-lg items-center hover:bg-neutral-700 transition duration-500 animate-pulse"
       >
         Play to boost your chances
       </a>

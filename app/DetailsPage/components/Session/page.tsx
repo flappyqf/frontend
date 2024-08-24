@@ -6,8 +6,8 @@ import { PlayButton } from "../PlayButton/page";
 
 const Session = () => {
   return (
-    <div className=" mx-16">
-      <div className="flex gap-4 justify-center items-center mt-5 md:mt-10">
+    <div className="mx-16 my-8 mb-12">
+      <div className="flex flex-col justify-center items-center lg:flex-row md:flex-row mt-5 md:mt-10 gap-4">
         <SwapModel />
         <ContributeModel />
         <PlayButton />

@@ -1,43 +1,36 @@
 "use client";
 import { createThirdwebClient, defineChain } from "thirdweb";
 import { ConnectButton } from "thirdweb/react";
-import {
-  inAppWallet,
-  createWallet,
-} from "thirdweb/wallets";
+import { inAppWallet, createWallet } from "thirdweb/wallets";
 import { scrollSepoliaTestnet } from "thirdweb/chains";
 
-
 const Header = () => {
-  const client = createThirdwebClient({ clientId: process.env.NEXT_PUBLIC_CLIENT_ID || "" });
+  const client = createThirdwebClient({
+    clientId: process.env.NEXT_PUBLIC_CLIENT_ID || "",
+  });
   const chain = defineChain(534351);
   const wallets = [
-  inAppWallet({
-    auth: {
-      options: [
-        "google",
-        "email",
-        "passkey",
-      ],
-    },
-  }),
+    inAppWallet({
+      auth: {
+        options: ["google", "email", "passkey"],
+      },
+    }),
 
-  createWallet("io.metamask"),
-  createWallet("com.coinbase.wallet"),
-  createWallet("me.rainbow"),
-  createWallet("io.rabby"),
-  createWallet("io.zerion.wallet"),
-];
+    createWallet("io.metamask"),
+    createWallet("com.coinbase.wallet"),
+    createWallet("me.rainbow"),
+    createWallet("io.rabby"),
+    createWallet("io.zerion.wallet"),
+  ];
 
   return (
- 
-      <header className="mx-auto py-8 lg:py-6 bg-black sticky top-0 z-50">
-        <div className="container mx-auto px-8 lg:px-4 flex items-center justify-between">
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold uppercase text-primary">
-              FlappyQF
-            </h1>
-          </div>
+    <header className="mx-auto py-8 lg:py-6 bg-black sticky top-0 z-50">
+      <div className="container mx-auto px-8 lg:px-4 flex items-center justify-between">
+        <div className="flex items-center">
+          <h1 className="text-2xl font-bold uppercase text-primary">
+            FlappyQF
+          </h1>
+        </div>
         <nav className="hidden md:flex gap-4 mx-auto">
           <a
             href="/"
@@ -57,28 +50,27 @@ const Header = () => {
             <a href="/" className="btn btn-primary">
               Home
             </a>
-            <a href="/details" className="btn btn-primary">
+            <a href="/DetailsPage" className="btn btn-primary">
               Details
             </a>
           </div>
         </footer>
-          {/* Put connect button here */}
-          <div>
-            <ConnectButton
-              client={client}
-              wallets={wallets}
-              connectButton={{ label: "Connect Wallet" }}
-              connectModal={{ size: "wide" }}
-              accountAbstraction={{
-                chain, 
-                factoryAddress: "0xD613bAdEe95a5Af1d2Bb04bD594B92D3B89989d5",
-                sponsorGas: true,
-              }}
-            />
-          </div>
+        {/* Put connect button here */}
+        <div>
+          <ConnectButton
+            client={client}
+            wallets={wallets}
+            connectButton={{ label: "Connect Wallet" }}
+            connectModal={{ size: "wide" }}
+            accountAbstraction={{
+              chain,
+              factoryAddress: "0xD613bAdEe95a5Af1d2Bb04bD594B92D3B89989d5",
+              sponsorGas: true,
+            }}
+          />
         </div>
-      </header>
-
+      </div>
+    </header>
   );
 };
 

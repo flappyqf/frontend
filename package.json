@@ -11,6 +11,7 @@
   "dependencies": {
     "@nextui-org/card": "^2.0.33",
     "@nextui-org/react": "^2.4.6",
+    "@types/styled-components": "^5.1.34",
     "clsx": "^2.1.1",
     "flowbite-react": "^0.10.1",
     "framer-motion": "^11.3.30",
@@ -20,6 +21,7 @@
     "react-dom": "^18",
     "react-query": "^3.39.3",
     "react-tournament-bracket": "^0.2.4",
+    "styled-components": "^5.3.6",
     "tailwind-merge": "^2.5.2",
     "thirdweb": "^5.48.1"
   },
