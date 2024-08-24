@@ -13,7 +13,7 @@ const ProjectCard = ({ image, title, description}: CardProps) => {
   return (
     <div className="card bg-base-100 w-fit shadow-2xl rounded-lg">
       <figure>
-        <img src={image} alt={title} />
+        <img src={image} alt={title} height={500} width={500} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
